@@ -1,7 +1,8 @@
 export const navLinks = [
-  { id: 1, title: "Home" },
-  { id: 2, title: "About" },
-  { id: 3, title: "Services" },
+  { id: "home", title: "Home" },
+  { id: "about", title: "About" },
+  { id: "features", title: "Features" },
+  { id: "solution", title: "Solution" },
 ];
 
 export const clients = [
