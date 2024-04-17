@@ -15,15 +15,15 @@ import {
 
 function App() {
   return (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className="bg-gradient-to-br from-purple-900 to-purple-700 w-full overflow-hidden">
           <NavBar />
           <Hero />
+          <Stats />
+          <Business />
           {/* <Billing />
           <CardDeal />
-          <Business />
           <Clients />
           <CTA />
-          <Stats />
           <Testimonials />
           <Footer /> */}
         </div>

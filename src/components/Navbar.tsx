@@ -12,10 +12,10 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="w-full flex py-6 bg-purple-800 navbar">
+    <nav className="w-full flex py-4 bg-gradient-to-br from-purple-900 to-purple-700 navbar">
       <a
         href="/"
-        className="mr-64 ml-12 flex items-center text-gray-200 text-xl"
+        className=" font-poppins mr-64 ml-12 flex items-center text-gray-200 text-3xl"
       >
         <img src={logo} alt="enigma" width={60} height={60} />
         Enigma Bank

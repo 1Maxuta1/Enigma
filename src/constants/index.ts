@@ -1,3 +1,8 @@
+import { FaMoneyBillWave } from "react-icons/fa"; 
+import { FaUserTie } from 'react-icons/fa';
+import { GiPiggyBank } from 'react-icons/gi';
+
+
 export const navLinks = [
   { id: "home", title: "Home" },
   { id: "about", title: "About" },
@@ -13,15 +18,21 @@ export const clients = [
 export const features = [
   {
     id: 1,
-    icon: "icon-1.svg",
-    title: "Feature 1",
-    content: "Description of Feature 1",
+    icon: FaMoneyBillWave,
+    title: "Investor's Club",
+    content: "Join our exclusive club of savvy investors. Share tips, discover new opportunities, and invest together in curated portfolios that align with your interests and values.",
   },
   {
     id: 2,
-    icon: "icon-2.svg",
-    title: "Feature 2",
-    content: "Description of Feature 2",
+    icon: FaUserTie,
+    title: "Smart Money Coach",
+    content: "Imagine having a financial guru in your pocket! Our AI-powered Money Coach learns your habits, predicts your financial needs, and serves up personalized tips to help you save and invest smarter.",
+  },
+  {
+    id: 3,
+    icon: GiPiggyBank,
+    title: "Dream Savings Goals",
+    content: "Turn dreams into reality with our Dream Savings Goals feature. Set up personalized savings goals for that dream vacation, new car, or home renovation, and track your progress with motivating visuals.",
   },
 ];
 
@@ -31,8 +42,9 @@ export const socialMedia = [
 ];
 
 export const stats = [
-  { id: 1, title: "Users", value: 1000 },
-  { id: 2, title: "Transactions", value: 5000 },
+  { id: 1, title: "Users", value: "4200+" },
+  { id: 2, title: "Transactions", value: "$290M+" },
+  { id: 3, title: "Trusted companies", value: "250+" },
 ];
 
 export const footerLinks = [
