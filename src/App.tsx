@@ -20,11 +20,12 @@ function App() {
           <Hero />
           <Stats />
           <Business />
-          {/* <Billing />
+          <Billing />
           <CardDeal />
+          <Testimonials />
+          {/* 
           <Clients />
           <CTA />
-          <Testimonials />
           <Footer /> */}
         </div>
   );

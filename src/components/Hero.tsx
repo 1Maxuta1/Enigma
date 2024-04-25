@@ -29,11 +29,10 @@ const Hero = () => {
       <div className="flex md:mr-4 mr-0">
         <GetStarted/>
       </div>
-      <div>
-      <img className="drop-shadow-lg" src={handCard} width={500} height={500} alt="card"/>
-      <div className="absolute z-[0] w-[40%] h-[50%] top-20 bg-pink__gradient"/>
-      <div className="absolute z-[1] w-[80%] h-[80%] top-20 bottom-40  bg-white__gradient"/>
-      <div className="absolute z-[0] w-[40%] h-[50%] right-20 bottom-20 top-20 bg-blue__gradient"/>
+      <div className="overflow-hidden relative rounded-full">
+      <img className="relative drop-shadow-lg z-[10]" src={handCard} width={500} height={500} alt="handWithCard"/>
+      <div className="absolute z-[0] w-[20%] h-[30%] top-20 bg-gradient-to-r from-pink-200 to-pink-600 bg-opacity-30 blur-3xl"/>
+      <div className="absolute z-[1] w-[80%] h-[80%] top-20 bottom-40  bg-white bg-opacity-30 blur-3xl"/>
       </div>
       </div>
       <div className="text-white w-1/2">
