@@ -6,12 +6,9 @@ export default {
   ],
   theme: {
     extend: {
-      transitionDuration: {
-        '500': '500ms', 
-      },
-      transitionTimingFunction: {
-        'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)', 
-      },
+      colors: {
+        super_purple: "#A475F0",
+    },
     },
   },
   plugins: [],

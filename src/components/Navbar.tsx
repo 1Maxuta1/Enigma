@@ -38,7 +38,7 @@ const NavBar = () => {
         ))}
       </ul>
       <div className="md:hidden flex flex-1 justify-end items-center mr-12">
-        <button className="" onClick={toggleMenu}>
+        <button onClick={toggleMenu}>
           {toggle ? (
             <ImCross className="w-6 h-6 text-white" />
           ) : (
