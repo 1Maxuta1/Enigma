@@ -1,9 +1,11 @@
 import styles, { layout } from "../style";
+import Button from "./Button";
 
 const CardDeal = () => {
   return (
-    <section
+    <section id="features"
       className={`text-white bg-gradient-to-br from-fuchsia-950 to-purple-950 px-16 flex w-full  md:flex-row flex-col ${styles.paddingY}`}
+      style={{ scrollBehavior: "smooth" }}
     >
       <div
         className={`w-full md:w-1/2 flex-1 flex-col justify-start ${styles.flexStart} flex-grow`}
@@ -17,6 +19,7 @@ const CardDeal = () => {
           effortless. Say goodbye to endless searching and hello to savings and
           rewards that suit you best.
         </p>
+        <Button/>
       </div>
       <div className={layout.sectionImg}>
       <div className="absolute z-[0] w-[20%] h-[30%] top-20 bg-gradient-to-r from-blue-600 to-blue-900 bg-opacity-20 blur-3xl" />

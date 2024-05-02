@@ -11,6 +11,13 @@ const NavBar = () => {
     setToggle(!toggle);
   };
 
+  const handleSmoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="w-full flex py-4 bg-gradient-to-br from-purple-900 to-purple-700 navbar">
       <a
@@ -20,7 +27,7 @@ const NavBar = () => {
         <img src={logo} alt="enigma" width={60} height={60} />
         Enigma Bank
       </a>
-      <ul className="justify-around list-none md:flex  hidden items-center flex-1">
+      <ul className="justify-around list-none md:flex  hidden items-center flex-1 ">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -29,8 +36,12 @@ const NavBar = () => {
             }`}
           >
             <a
-              className="hover:text-white bg duration-300 hover:shadow-2xl"
+              className="hover:text-blue-300 duration-300 cursor-pointer hover:shadow-2xl"
               href={`#${nav.id}`}
+              onClick={(e) => {
+                e.preventDefault(); 
+                handleSmoothScroll(nav.id);
+              }}
             >
               {nav.title}
             </a>
@@ -49,20 +60,24 @@ const NavBar = () => {
       <div
         className={`${
           toggle ? "flex" : "hidden"
-        } p-6 bg-purple-950 rounded-lg md:hidden absolute right-0 mx-4 my-2 top-24 min-w-[140px] sidebar`}
+        } p-6 bg-purple-950 rounded-lg md:hidden absolute right-0 mx-4 my-2 top-24 min-w-[140px] z-[100] sidebar`}
       >
-        <ul className="list-none flex flex-col justify-end items-center">
+        <ul className="list-none flex flex-col justify-end items-center ">
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] text-gray-200  ${
+              className={`font-poppins font-normal cursor-pointer text-[24px] text-gray-200  hover:text-blue-300 duration-300 ${
                 index === navLinks.length - 1 ? "mr-0" : "mb-4"
               }
                 }`}
             >
               <a
-                className="hover:text-white duration-300 hover:shadow-2xl"
+                className="hover:text-blue-300 duration-300 cursor-pointer hover:shadow-2xl"
                 href={`#${nav.id}`}
+                onClick={(e) => {
+                  e.preventDefault(); 
+                  handleSmoothScroll(nav.id);
+                }}
               >
                 {nav.title}
               </a>

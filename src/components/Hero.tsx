@@ -1,7 +1,5 @@
 import styles from "../style";
 import { CiDiscount1 } from "react-icons/ci";
-import card from "../assets/bank-card.png";
-import hand from "../assets/hand.png";
 import handCard from "../assets/hand-with-card.png";
 import GetStarted from "./GetStarted";
 

@@ -2,7 +2,7 @@ import styles, { layout } from "../style";
 
 const Billing = () => {
   return (
-    <section
+    <section id="solution"
       className={`${layout.sectionReverse} text-white flex bg-gradient-to-tr from-fuchsia-950 to-purple-950 px-16`}
     >
       <div className={layout.sectionImgReverse}>
