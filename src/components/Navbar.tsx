@@ -76,7 +76,6 @@ const NavBar = () => {
                 href={`#${nav.id}`}
                 onClick={(e) => {
                   e.preventDefault(); 
-                  handleSmoothScroll(nav.id);
                 }}
               >
                 {nav.title}

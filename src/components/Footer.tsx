@@ -4,7 +4,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { footerLinks } from "../constants";
-import React, { useRef } from 'react';
 
 const Footer = () => {
 
