@@ -11,12 +11,12 @@ const NavBar = () => {
     setToggle(!toggle);
   };
 
-  const handleSmoothScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleSmoothScroll = (id) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   return (
     <nav className="w-full flex py-4 bg-gradient-to-br from-purple-900 to-purple-700 navbar">
@@ -40,7 +40,7 @@ const NavBar = () => {
               href={`#${nav.id}`}
               onClick={(e) => {
                 e.preventDefault(); 
-                handleSmoothScroll(nav.id);
+                // handleSmoothScroll(nav.id);
               }}
             >
               {nav.title}
