@@ -1,4 +1,7 @@
 import styles, { layout } from "../style";
+import billing from "/src/assets/billing.png"
+import appstore from "/src/assets/appstore.png"
+import googleplay from "/src/assets/googleplay.png"
 
 const Billing = () => {
   return (
@@ -8,7 +11,7 @@ const Billing = () => {
       <div className={layout.sectionImgReverse}>
         <div className="absolute z-[0] w-[20%] h-[30%] top-20 bg-gradient-to-r from-pink-200 to-pink-600 bg-opacity-20 blur-3xl" />
         <div className="absolute z-[1] w-[80%] h-[80%] top-20 bottom-40  bg-white bg-opacity-20 blur-3xl" />
-        <img className="z-[10]" src="/src/assets/billing.png" />
+        <img className="z-[10]" src={billing} />
       </div>
       <div
         className={`w-full md:w-1/2 flex-1 flex-col justify-start ${styles.flexStart} flex-grow`}
@@ -25,13 +28,13 @@ const Billing = () => {
             target="_blank"
             href="https://apps.apple.com/ru/developer/apple/id284417353?mt=12"
           >
-            <img src="/src/assets/appstore.png" />
+            <img src={appstore} />
           </a>
           <a
             target="_blank"
             href="https://play.google.com/store/games?hl=ru&gl=US&pli=1"
           >
-            <img src="/src/assets/googleplay.png" />
+            <img src={googleplay}/>
           </a>
         </div>
       </div>

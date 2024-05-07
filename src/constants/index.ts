@@ -4,7 +4,7 @@ import { GiPiggyBank } from "react-icons/gi";
 import testimonials1 from "../assets/testimonials1.jpg";
 import testimonials2 from "../assets/testimonials2.jpg";
 import testimonials3 from "../assets/testimonials3.jpg";
-import testimonials4 from "../assets/testimonials4.jpg";``
+import testimonials4 from "../assets/testimonials4.jpg";
 
 export const navLinks = [
   { id: "home", title: "Home" },
